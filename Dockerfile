@@ -1,5 +1,8 @@
 FROM python:3
-ENV PYTHONUMBUFFERED 1
+# maintainer label added
+MAINTAINER Avee Chakraborty
+# changed to pythonunbuffered
+ENV PYTHONUNBUFFERED 1
 RUN mkdir /app
 WORKDIR /app
 COPY requirements.txt /app/
